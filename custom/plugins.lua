@@ -1,32 +1,15 @@
 local plugins = {
   {
     "nvim-neorg/neorg",
-    lazy = false,
+    dependencies = {"nvim-lua/plenary.nvim"},
     build = ":Neorg sync-parsers",
-    -- tag = "*",
-    dependencies = { "nvim-lua/plenary.nvim" },
-    config = function()
-      require("neorg").setup {
-        load = {
-          ["core.defaults"] = {}, -- Loads default behaviour
-          ["core.concealer"] = {}, -- Adds pretty icons to your documents
-          ["core.completion"] = {
-            config = {
-              engine = "nvim-cmp",
-            },
-          },
-          ["core.dirman"] = { -- Manages Neorg workspaces
-            config = {
-              workspaces = {
-                notes = "~/Documents/Notes/Neorg/Notes/",
-                school = "~/Documents/Notes/Neorg/School/",
-              },
-              default_workspace = "notes",
-            },
-          },
-        },
-      }
-    end,
+    --tag = "*",
+    lazy = true,
+    ft = "norg",
+    cmd = "Neorg",
+    config = function ()
+      require "custom.configs.neorg"
+    end
   },
   {
     "github/copilot.vim",
