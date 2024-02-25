@@ -75,6 +75,9 @@ local plugins = {
         "clangd",
         "clang-format",
         "codelldb",
+        "sqlls",
+        "sql-formatter",
+        "sqlfluff",
       }
     }
   }
