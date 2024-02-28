@@ -4,7 +4,8 @@ local plugins = {
     dependencies = {"nvim-lua/plenary.nvim"},
     build = ":Neorg sync-parsers",
     --tag = "*",
-    lazy = true,
+    -- lazy = true,
+    event = "VeryLazy",
     ft = "norg",
     cmd = "Neorg",
     config = function ()
@@ -72,12 +73,18 @@ local plugins = {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
+        -- CPP
         "clangd",
         "clang-format",
         "codelldb",
+        -- SQL
         "sqlls",
         "sql-formatter",
         "sqlfluff",
+        -- Python
+        "pyright",
+        "flake8",
+        "autopep8",
       }
     }
   }

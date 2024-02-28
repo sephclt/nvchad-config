@@ -3,9 +3,9 @@ local M = {}
 
 M.ui = {
   statusline = {
-    theme = "default",
+    theme = "vscode_colored",
 
-    separator_style = "round"
+    --separator_style = "block"
   },
 
   theme = "catppuccin",
