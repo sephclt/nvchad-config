@@ -1,5 +1,9 @@
 local plugins = {
   {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
+  {
     "nvim-neorg/neorg",
     dependencies = {"nvim-lua/plenary.nvim"},
     build = ":Neorg sync-parsers",
