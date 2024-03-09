@@ -1,7 +1,1 @@
-local g = vim.g
-
-g.copilot_assume_mapped = true
-
-g.copilot_filetypes = {
-  norg = false
-}
+../../../../../dotfiles/.config/nvim/lua/custom/configs/copilot.lua

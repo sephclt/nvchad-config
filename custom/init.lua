@@ -1,5 +1,1 @@
-local opt = vim.opt
-
-opt.relativenumber = true;
-
-opt.conceallevel = 1;
+../../../../dotfiles/.config/nvim/lua/custom/init.lua
